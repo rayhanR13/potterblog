@@ -1,5 +1,5 @@
 <section class="content display-blog">
-    <div>
+    <div class="display-blog-buttons">
         <a class="btn btn-primary" href="/blogs/<%= blog.id %>/edit">Edit</a>
 
         <form action="/blogs/<%= blog.id %>?_method=DELETE" method="POST">
@@ -7,7 +7,9 @@
         </form>
     </div>
 
-    <h2 class="display-blog-title"><%= blog.title %></h2>
-    <p class="display-blog-snippet"><%= blog.snippet %></p>
-    <div class="display-blog-body"><%= blog.body %></div>
+    <div class="blog-row">
+        <h2 class="display-blog-title"><%= blog.title %></h2>
+        <div class="display-blog-body"><%= blog.body %></div>
+    </div>
+    
 </section>

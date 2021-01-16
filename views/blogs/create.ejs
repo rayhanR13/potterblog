@@ -1,10 +1,10 @@
-<section class="content">
+<section class="content create-blog">
     <h2>Create New Blog</h2>
 
     <form action="/blogs" method="POST">
         <%- include('_form_fields.ejs') %>
 
-        <div>
+        <div class="buttons">
             <a class="btn btn-danger" href="/blogs">Cancel</a>
             <button type="submit" class="btn btn-primary">Create</button>
         </div>

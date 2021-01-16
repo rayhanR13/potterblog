@@ -1,0 +1,327 @@
+$bgPrimary: rgb(240, 240, 240);
+$bgSecondary: rgb(255, 255, 255);
+$boxShadowCol: rgba(0, 0, 0, 0.2);
+$boxShadow: 0 1px 2px $boxShadowCol;
+$headerBg: cornflowerblue;
+$headerHeight: 12vh;
+$footerHeight: 7vh;
+$btnPrimary: rgb(0, 145, 0);
+$btnDanger: lightcoral;
+
+@mixin displayFlex($align, $justify) {
+    align-items: $align;
+    display: flex;
+    justify-content: $justify;
+}
+
+html {
+    font-family: "Poppins", sans-serif;
+    line-height: 1.5;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: $bgPrimary;
+    min-height: 100vh;
+    width: 100%;
+}
+
+a {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+h2 {
+    color: $headerBg;
+    margin-bottom: 1rem;
+}
+
+label {
+    font-size: 1.1rem;
+}
+
+input {
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    height: 2rem;
+    outline: none;
+    padding: 0.5rem;
+
+    &:focus {
+        border: $headerBg;
+        outline: none;
+    }
+}
+
+textarea {
+    border: none;
+    font-family: "Poppins", sans-serif;
+    font-size: 1rem;
+    height: 300px;
+    outline: none;
+    padding: 0.5rem;
+    resize: none;
+    width: 100%;
+
+    &:focus {
+        border: $headerBg;
+        outline: none;
+    }
+}
+
+.btn {
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    font-family: "Poppins", sans-serif;
+    font-size: 0.7rem;
+    height: 2rem;
+    margin: 0.5rem 0;
+    outline: none;
+    padding: 0.5rem 1rem;
+    text-align: center;
+    transition: background-color 0.3s ease;
+    width: fit-content;
+
+    &.btn-primary {
+        background-color: $btnPrimary;
+
+        &:hover {
+            background-color: darken($btnPrimary, 7);
+        }
+    }
+
+    &.btn-danger {
+        background-color: $btnDanger;
+
+        &:hover {
+            background-color: darken($btnDanger, 7);
+        }
+    }
+}
+
+header {
+    @include displayFlex(center, space-between);
+    background-color: $headerBg;
+    color: white;
+    height: $headerHeight;
+    padding: 0 1rem;
+
+    .brand {
+        display: flex;
+        flex-direction: column;
+        padding: 0.5rem 1rem;
+        width: 40%;
+
+        .brand-name {
+            a {
+                color: white;
+            }
+        }
+    }
+
+    .main-nav {
+        padding: 0.5rem 1rem;
+        width: 60%;
+
+        ul {
+            display: flex;
+            justify-content: flex-end;
+
+            li {
+                border-radius: 2px;
+                list-style: none;
+                margin: 0.2rem 1rem;
+                padding: 0 0.5rem;
+                transition: background-color 0.3s ease;
+
+                &:hover {
+                    background-color: darken($headerBg, 10);
+                }
+
+                a {
+                    color: white;
+                }
+            }
+        }
+    }
+}
+
+main {
+    @include displayFlex(center, auto);
+
+    flex-direction: column;
+    min-height: 100vh - $headerHeight - $footerHeight;
+
+    .content {
+        margin: 0 2rem;
+        max-width: 1200px;
+        padding: 2rem 0 0 0;
+        width: 90%;
+    }
+
+    .create-blog {
+        form {
+            display: flex;
+            flex-direction: column;
+            margin: 1rem auto;
+            width: 100%;
+
+            div {
+                display: flex;
+                flex-direction: column;
+                margin-bottom: 1rem;
+
+                label {
+                    margin-bottom: 0.2rem;
+                }
+            }
+
+            .buttons {
+                @include displayFlex(auto, flex-start);
+
+                flex-direction: row;
+
+                .btn {
+                    margin-right: 0.5rem;
+                }
+            }
+        }
+    }
+
+    .search-blog-form {
+        h2 {
+            color: $headerBg;
+            margin-bottom: 1rem;
+        }
+
+        form {
+            .form-row {
+                display: flex;
+                flex-direction: column;
+
+                label {
+                    margin-bottom: 0.5rem;
+                }
+
+                #blog-title {
+                    box-shadow: $boxShadow;
+                    height: 2rem;
+                    margin-bottom: 0.5rem;
+                    padding: 0.2rem 0.5rem;
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    .display-all-blogs {
+        .blog-row {
+            background-color: $bgSecondary;
+            border-left: 5px solid $headerBg;
+            border-radius: 5px;
+            box-shadow: $boxShadow;
+            height: 100px;
+            margin-bottom: 1rem;
+            padding: 1rem;
+
+            h2 {
+                margin-bottom: 0.5rem;
+
+                a {
+                    color: $headerBg;
+                }
+            }
+
+            p {
+                margin-left: 1rem;
+            }
+        }
+    }
+
+    .display-blog {
+        .display-blog-buttons {
+            display: flex;
+            margin-bottom: 1rem;
+
+            .btn {
+                margin-right: 0.5rem;
+            }
+        }
+
+        .blog-row {
+            background-color: $bgSecondary;
+            border-radius: 5px;
+            box-shadow: $boxShadow;
+            padding: 1rem;
+            .display-blog-title {
+                margin-bottom: 1rem;
+            }
+        }
+    }
+
+    .edit-blog {
+        div {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 1rem;
+
+            label {
+                margin-bottom: 0.2rem;
+            }
+        }
+
+        .buttons {
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+
+            .btn {
+                margin-right: 0.5rem;
+            }
+        }
+    }
+}
+
+footer {
+    @include displayFlex(center, center);
+
+    background-color: lighten($headerBg, 5);
+    color: white;
+    height: $footerHeight;
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        align-items: center;
+        margin-top: 0;
+        padding-top: 0;
+        flex-direction: column;
+        height: 20vh;
+        justify-content: center;
+
+        .brand {
+            width: 100%;
+            text-align: center;
+        }
+
+        .main-nav {
+            width: 100%;
+
+            ul {
+                justify-content: center;
+
+                li {
+                    margin: 0 1rem;
+                }
+            }
+        }
+    }
+}

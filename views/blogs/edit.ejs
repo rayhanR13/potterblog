@@ -1,10 +1,10 @@
-<section class="content">
+<section class="content edit-blog">
     <h2>Update Blog</h2>
 
     <form action="/blogs/<%= blog.id %>?_method=PUT" method="POST">
         <%- include('_form_fields.ejs') %>
 
-        <div>
+        <div class="buttons">
             <a class="btn btn-danger" href="/blogs">Cancel</a>
             <button type="submit" class="btn btn-primary">Update</button>
         </div>

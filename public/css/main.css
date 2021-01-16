@@ -1,0 +1,383 @@
+html {
+  font-family: "Poppins", sans-serif;
+  line-height: 1.5;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #f0f0f0;
+  min-height: 100vh;
+  width: 100%;
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+h2 {
+  color: cornflowerblue;
+  margin-bottom: 1rem;
+}
+
+label {
+  font-size: 1.1rem;
+}
+
+input {
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  height: 2rem;
+  outline: none;
+  padding: 0.5rem;
+}
+
+input:focus {
+  border: cornflowerblue;
+  outline: none;
+}
+
+textarea {
+  border: none;
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  height: 300px;
+  outline: none;
+  padding: 0.5rem;
+  resize: none;
+  width: 100%;
+}
+
+textarea:focus {
+  border: cornflowerblue;
+  outline: none;
+}
+
+.btn {
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  font-family: "Poppins", sans-serif;
+  font-size: 0.7rem;
+  height: 2rem;
+  margin: 0.5rem 0;
+  outline: none;
+  padding: 0.5rem 1rem;
+  text-align: center;
+  -webkit-transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.btn.btn-primary {
+  background-color: #009100;
+}
+
+.btn.btn-primary:hover {
+  background-color: #006d00;
+}
+
+.btn.btn-danger {
+  background-color: lightcoral;
+}
+
+.btn.btn-danger:hover {
+  background-color: #ec6060;
+}
+
+header {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: cornflowerblue;
+  color: white;
+  height: 12vh;
+  padding: 0 1rem;
+}
+
+header .brand {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 0.5rem 1rem;
+  width: 40%;
+}
+
+header .brand .brand-name a {
+  color: white;
+}
+
+header .main-nav {
+  padding: 0.5rem 1rem;
+  width: 60%;
+}
+
+header .main-nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+header .main-nav ul li {
+  border-radius: 2px;
+  list-style: none;
+  margin: 0.2rem 1rem;
+  padding: 0 0.5rem;
+  -webkit-transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease;
+}
+
+header .main-nav ul li:hover {
+  background-color: #3676e8;
+}
+
+header .main-nav ul li a {
+  color: white;
+}
+
+main {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: auto;
+      -ms-flex-pack: auto;
+          justify-content: auto;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 81vh;
+}
+
+main .content {
+  margin: 0 2rem;
+  max-width: 1200px;
+  padding: 2rem 0 0 0;
+  width: 90%;
+}
+
+main .create-blog form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 1rem auto;
+  width: 100%;
+}
+
+main .create-blog form div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+main .create-blog form div label {
+  margin-bottom: 0.2rem;
+}
+
+main .create-blog form .buttons {
+  -webkit-box-align: auto;
+      -ms-flex-align: auto;
+          align-items: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+main .create-blog form .buttons .btn {
+  margin-right: 0.5rem;
+}
+
+main .search-blog-form h2 {
+  color: cornflowerblue;
+  margin-bottom: 1rem;
+}
+
+main .search-blog-form form .form-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+main .search-blog-form form .form-row label {
+  margin-bottom: 0.5rem;
+}
+
+main .search-blog-form form .form-row #blog-title {
+  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  height: 2rem;
+  margin-bottom: 0.5rem;
+  padding: 0.2rem 0.5rem;
+  width: 100%;
+}
+
+main .display-all-blogs .blog-row {
+  background-color: white;
+  border-left: 5px solid cornflowerblue;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  height: 100px;
+  margin-bottom: 1rem;
+  padding: 1rem;
+}
+
+main .display-all-blogs .blog-row h2 {
+  margin-bottom: 0.5rem;
+}
+
+main .display-all-blogs .blog-row h2 a {
+  color: cornflowerblue;
+}
+
+main .display-all-blogs .blog-row p {
+  margin-left: 1rem;
+}
+
+main .display-blog .display-blog-buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 1rem;
+}
+
+main .display-blog .display-blog-buttons .btn {
+  margin-right: 0.5rem;
+}
+
+main .display-blog .blog-row {
+  background-color: white;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  padding: 1rem;
+}
+
+main .display-blog .blog-row .display-blog-title {
+  margin-bottom: 1rem;
+}
+
+main .edit-blog div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+main .edit-blog div label {
+  margin-bottom: 0.2rem;
+}
+
+main .edit-blog .buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100%;
+}
+
+main .edit-blog .buttons .btn {
+  margin-right: 0.5rem;
+}
+
+footer {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #7ba5f0;
+  color: white;
+  height: 7vh;
+}
+
+@media screen and (max-width: 768px) {
+  header {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: 0;
+    padding-top: 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 20vh;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  header .brand {
+    width: 100%;
+    text-align: center;
+  }
+  header .main-nav {
+    width: 100%;
+  }
+  header .main-nav ul {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  header .main-nav ul li {
+    margin: 0 1rem;
+  }
+}
+/*# sourceMappingURL=main.css.map */
