@@ -117,6 +117,7 @@ header {
     .brand {
         display: flex;
         flex-direction: column;
+        padding: 0 1rem;
         width: 40%;
 
         .brand-name {
@@ -310,8 +311,8 @@ footer {
         margin-top: 0;
         padding-top: 0;
         flex-direction: column;
-        height: 20vh;
-        justify-content: center;
+        height: 15vh;
+        justify-content: space-between;
         padding: 0;
 
         .brand {
@@ -320,6 +321,7 @@ footer {
         }
 
         .main-nav {
+            border-top: 1px solid white;
             width: 100%;
 
             ul {

@@ -119,6 +119,7 @@ header .brand {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  padding: 0 1rem;
   width: 40%;
 }
 
@@ -366,10 +367,10 @@ footer {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    height: 20vh;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    height: 15vh;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     padding: 0;
   }
   header .brand {
@@ -377,6 +378,7 @@ footer {
     text-align: center;
   }
   header .main-nav {
+    border-top: 1px solid white;
     width: 100%;
   }
   header .main-nav ul {
