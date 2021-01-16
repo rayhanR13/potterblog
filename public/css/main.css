@@ -119,7 +119,6 @@ header .brand {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding: 0.5rem 1rem;
   width: 40%;
 }
 
@@ -128,7 +127,6 @@ header .brand .brand-name a {
 }
 
 header .main-nav {
-  padding: 0.5rem 1rem;
   width: 60%;
 }
 
@@ -180,6 +178,15 @@ main .content {
   max-width: 1200px;
   padding: 2rem 0 0 0;
   width: 90%;
+}
+
+main .about {
+  background-color: white;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  margin: 1rem auto;
+  padding: 1rem;
 }
 
 main .create-blog form {
@@ -263,7 +270,7 @@ main .display-all-blogs .blog-row {
   border-radius: 5px;
   -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
           box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
-  height: 100px;
+  height: auto;
   margin-bottom: 1rem;
   padding: 1rem;
 }
@@ -363,6 +370,7 @@ footer {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    padding: 0;
   }
   header .brand {
     width: 100%;
