@@ -66,7 +66,7 @@ textarea:focus {
   color: white;
   cursor: pointer;
   font-family: "Poppins", sans-serif;
-  font-size: 0.7rem;
+  font-size: 0.8rem;
   height: 2rem;
   margin: 0.5rem 0;
   outline: none;
@@ -367,7 +367,7 @@ footer {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    height: 15vh;
+    height: 17vh;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
@@ -379,6 +379,7 @@ footer {
   }
   header .main-nav {
     border-top: 1px solid white;
+    padding: 0.2rem 0;
     width: 100%;
   }
   header .main-nav ul {

@@ -81,7 +81,7 @@ textarea {
     color: white;
     cursor: pointer;
     font-family: "Poppins", sans-serif;
-    font-size: 0.7rem;
+    font-size: 0.8rem;
     height: 2rem;
     margin: 0.5rem 0;
     outline: none;
@@ -311,7 +311,7 @@ footer {
         margin-top: 0;
         padding-top: 0;
         flex-direction: column;
-        height: 15vh;
+        height: 17vh;
         justify-content: space-between;
         padding: 0;
 
@@ -322,6 +322,8 @@ footer {
 
         .main-nav {
             border-top: 1px solid white;
+            padding: 0.2rem 0;
+
             width: 100%;
 
             ul {
