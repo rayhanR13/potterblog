@@ -107,8 +107,8 @@ header {
           justify-content: space-between;
   background-color: cornflowerblue;
   color: white;
-  height: 12vh;
-  padding: 0 1rem;
+  height: 13vh;
+  padding: 0 5%;
 }
 
 header .brand {
@@ -172,7 +172,7 @@ main {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  min-height: 81vh;
+  min-height: 80vh;
 }
 
 main .content {

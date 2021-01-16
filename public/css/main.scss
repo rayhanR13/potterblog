@@ -3,7 +3,7 @@ $bgSecondary: rgb(255, 255, 255);
 $boxShadowCol: rgba(0, 0, 0, 0.2);
 $boxShadow: 0 1px 2px $boxShadowCol;
 $headerBg: cornflowerblue;
-$headerHeight: 12vh;
+$headerHeight: 13vh;
 $footerHeight: 7vh;
 $btnPrimary: rgb(0, 145, 0);
 $btnDanger: lightcoral;
@@ -112,7 +112,7 @@ header {
     background-color: $headerBg;
     color: white;
     height: $headerHeight;
-    padding: 0 1rem;
+    padding: 0 5%;
 
     .brand {
         display: flex;
