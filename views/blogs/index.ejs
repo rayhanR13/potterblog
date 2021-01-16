@@ -1,0 +1,22 @@
+<section class="content search-blog-form">
+    <h2>Search Blogs</h2>
+
+    <form action="/blogs" method="GET">
+        <div>
+            <label for="blog-title">Title</label>
+            <input type="text" id="blog-title" name="title" value="<%= searchOptions.title %>">
+        </div>
+        <div>
+            <button type="submit" class="btn btn-primary">Search</button>
+        </div>
+    </form>
+</section>
+
+<section class="display-all-blogs">
+    <% blogs.forEach(blog => { %>
+        <div class="blog-row">
+            <h2><a href="/blogs/<%= blog.id %>"><%= blog.title %></a></h2>
+            <p><%= blog.snippet %></p>
+        </div>
+    <% }) %>
+</section>
